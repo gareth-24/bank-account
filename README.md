@@ -14,6 +14,16 @@ account{
   type: "Checking";
   history: "";
 }
+
+Describe: Account.prototype.assignAccNumber()
+
+Test: Takes the account and assigns the account number of 10 numbers.
+Code:
+const account = new Account("McBankersons", 123809298, "Checking");
+account.assignAccNumber();
+account.accountNumber;
+Expected Result: <random 10 digit number>
+
 Account.prototype.transfer
 
 Test: Make prototype method that does a transfer to or from the account that updates to history.
